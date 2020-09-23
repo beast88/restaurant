@@ -1,0 +1,14 @@
+.hero-container {
+	height: 600px;
+}
+
+.bg {
+	background-image: url(images/main.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.info {
+	white-space: pre-line;
+}

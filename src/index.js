@@ -1,1 +1,3 @@
-console.log('Hello Alex');
+import {renderHome} from "./page_loader.js";
+
+renderHome();
