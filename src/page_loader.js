@@ -24,6 +24,7 @@ const renderHome = () => {
 
 	const paragraph = document.createElement('p');
 	paragraph.setAttribute('class', 'info');
+	paragraph.classList.add('mt-4');
 	paragraph.textContent = `The fine delicacies of the East meets the ravenous appetite of a small British country filled with some very angry people.
 
 	Here at Dragon Sushi we understand that real dragons have real hunger, and what better way to satisfy that hunger than with the finest sushi the Atlantic has to offer?
