@@ -4,6 +4,39 @@ body {
 	font-family: 'Nova Cut', cursive;
 }
 
+.navbar {
+	justify-content: center;
+}
+
+.navbar-nav{
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.navbar-nav a{
+	font-size: 1.75rem;
+	color: #C0313B;
+}
+
+.nav-link:hover{
+	background: #798326;
+	border-radius: 10px;
+	opacity: 40%;
+	color: #760800;
+}
+
+.active {
+	background: #818C2B;
+	border-radius: 10px;
+	opacity: 70%;
+}
+
+.active:hover {
+	background: #818C2B;
+	opacity: 70%;
+	color: #c0313b;
+}
+
 h1 {
 	font-family: 'Euphoria Script', cursive;
 	text-align: center;
