@@ -2,7 +2,7 @@ import {renderHome} from "./page_loader.js";
 
 renderHome();
 
-const renderTabs = () => {
+const renderTabs = (() => {
 	const content = document.querySelector('#content');
 
 	const navContainer = document.createElement('nav');
@@ -32,6 +32,26 @@ const renderTabs = () => {
 
 	content.insertAdjacentElement('beforebegin', navContainer);
 	return {homeTab, menuTab, contactTab};
+})();
+
+const clearPage = () => {
+	const content = document.querySelector('#content');
+	content.innerHTML = '';
 }
 
-renderTabs();
+const tabActions = (() => {
+	const homeTab = renderTabs.homeTab;
+	const menuTab = renderTabs.menuTab;
+	const contactTab = renderTabs.contactTab;
+
+	homeTab.addEventListener("click", (e) => {
+		clearPage();
+		renderHome();
+		if (homeTab.getAttribute('class') != 'active') {
+			homeTab.classList.add('active')
+		};
+		menuTab.classList.remove('active');
+		contactTab.classList.remove('active');
+	});
+
+})();
