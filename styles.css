@@ -23,6 +23,7 @@ body {
 	border-radius: 10px;
 	opacity: 40%;
 	color: #760800;
+	cursor: pointer;
 }
 
 .active {
