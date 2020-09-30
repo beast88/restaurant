@@ -1,7 +1,7 @@
 import {renderHome} from "./page_loader.js";
 import {renderMenu} from "./menu_loader.js";
 
-renderMenu();
+renderHome();
 
 const renderTabs = (() => {
 	const content = document.querySelector('#content');
@@ -45,13 +45,23 @@ const tabActions = (() => {
 	const menuTab = renderTabs.menuTab;
 	const contactTab = renderTabs.contactTab;
 
-	homeTab.addEventListener("click", (e) => {
+	homeTab.addEventListener('click', (e) => {
 		clearPage();
 		renderHome();
 		if (homeTab.getAttribute('class') != 'active') {
 			homeTab.classList.add('active')
 		};
 		menuTab.classList.remove('active');
+		contactTab.classList.remove('active');
+	});
+
+	menuTab.addEventListener('click', (e) => {
+		clearPage();
+		renderMenu();
+		if (menuTab.getAttribute('class') != 'active') {
+			menuTab.classList.add('active')
+		};
+		homeTab.classList.remove('active');
 		contactTab.classList.remove('active');
 	});
 
