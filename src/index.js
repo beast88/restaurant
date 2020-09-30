@@ -1,6 +1,7 @@
 import {renderHome} from "./page_loader.js";
+import {renderMenu} from "./menu_loader.js";
 
-renderHome();
+renderMenu();
 
 const renderTabs = (() => {
 	const content = document.querySelector('#content');
