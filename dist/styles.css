@@ -63,4 +63,13 @@ h1 {
 .menuCard {
 	width: 100px;
 	margin-top: 30px;
+	text-align: center;
+}
+
+.menu-image {
+	border-radius: 20px;
+}
+
+h3, h5 {
+	color: #C0313B;
 }
