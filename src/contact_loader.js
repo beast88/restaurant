@@ -6,6 +6,7 @@ const renderContact = () => {
 
 	const contact = document.createElement('div');
 	contact.setAttribute('class', 'contact');
+	contact.classList.add('mt-3');
 
 	const headline = document.createElement('h3');
 	headline.innerText = `Contact Us`;
@@ -14,7 +15,7 @@ const renderContact = () => {
 	email.innerText = `Email: dragonsushi@fakemail.com`;
 
 	const online = document.createElement('p');
-	online.innerText = `Web Enquires:`;
+	online.innerText = `Web Enquires`;
 
 	const link = document.createElement('a');
 	link.setAttribute('class', 'link');
