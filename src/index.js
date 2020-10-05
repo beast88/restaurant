@@ -2,7 +2,7 @@ import {renderHome} from "./page_loader.js";
 import {renderMenu} from "./menu_loader.js";
 import {renderContact} from "./contact_loader.js";
 
-renderContact();
+renderHome();
 
 const renderTabs = (() => {
 	const content = document.querySelector('#content');
@@ -64,6 +64,16 @@ const tabActions = (() => {
 		};
 		homeTab.classList.remove('active');
 		contactTab.classList.remove('active');
+	});
+
+	contactTab.addEventListener('click', (e) => {
+		clearPage();
+		renderContact();
+		if (contactTab.getAttribute('class') != 'active') {
+			contactTab.classList.add('active')
+		};
+		homeTab.classList.remove('active');
+		menuTab.classList.remove('active');
 	});
 
 })();
