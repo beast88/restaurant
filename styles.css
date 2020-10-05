@@ -74,3 +74,8 @@ h1 {
 h3, h5 {
 	color: #C0313B;
 }
+
+.link-image {
+	background: white;
+	border-radius: 50%;
+}
