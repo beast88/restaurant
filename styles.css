@@ -75,7 +75,13 @@ h3, h5 {
 	color: #C0313B;
 }
 
+.contact {
+	text-align: center;
+}
+
 .link-image {
-	background: white;
+	background: #C0313B;
+	height: 300px;
+	width: 300px;
 	border-radius: 50%;
 }
