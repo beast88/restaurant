@@ -1,7 +1,8 @@
 import {renderHome} from "./page_loader.js";
 import {renderMenu} from "./menu_loader.js";
+import {renderContact} from "./contact_loader.js";
 
-renderHome();
+renderContact();
 
 const renderTabs = (() => {
 	const content = document.querySelector('#content');
