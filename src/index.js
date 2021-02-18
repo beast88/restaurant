@@ -13,7 +13,6 @@ const renderTabs = (() => {
 
 	const navbar = document.createElement('div');
 	navbar.setAttribute('class', 'navbar-nav');
-	navbar.classList.add('w-50');
 
 	const homeTab = document.createElement('a');
 	homeTab.setAttribute('class', 'nav-link');
